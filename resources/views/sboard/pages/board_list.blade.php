@@ -1,4 +1,4 @@
-@extends('jumbotron')
+@extends('app')
 
 @section('content')
 <table class="table table-bordered">
