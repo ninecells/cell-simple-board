@@ -40,7 +40,7 @@ class Comment extends Model
     {
         $content = $this->attributes['content'];
         $parsedown = new \Parsedown();
-        return $parsedown->text($content);
+        return clean($parsedown->text($content));
     }
 
     public function writer()

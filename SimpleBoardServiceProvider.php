@@ -6,6 +6,7 @@ use App;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Support\ServiceProvider;
 use NineCells\Auth\AuthServiceProvider;
+use Mews\Purifier\PurifierServiceProvider;
 
 use NineCells\SimpleBoard\Console\CreateBoardCommand;
 use NineCells\SimpleBoard\Console\DeleteBoardCommand;
@@ -51,6 +52,7 @@ class SimpleBoardServiceProvider extends ServiceProvider
     public function register()
     {
         App::register(AuthServiceProvider::class);
+        App::register(PurifierServiceProvider::class);
 
         $this->registerCreateBoardCommand();
         $this->registerDeleteBoardCommand();
