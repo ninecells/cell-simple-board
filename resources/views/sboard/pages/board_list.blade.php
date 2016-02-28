@@ -1,4 +1,4 @@
-@extends('app')
+@extends('ncells::jumbotron.app')
 
 @section('content')
 <table class="table table-bordered">
