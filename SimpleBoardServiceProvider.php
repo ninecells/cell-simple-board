@@ -5,7 +5,7 @@ namespace NineCells\SimpleBoard;
 use App;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Support\ServiceProvider;
-use NineCells\Auth\MemberServiceProvider;
+use NineCells\Member\MemberServiceProvider;
 use Mews\Purifier\PurifierServiceProvider;
 
 use NineCells\SimpleBoard\Console\CreateBoardCommand;
